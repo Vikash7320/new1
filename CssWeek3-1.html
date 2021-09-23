@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements selector in css</title>
+    <style>
+    body{
+        background-color: rgb(167, 221, 167);
+    }
+   .container{
+   border: 3px solid green;
+   margin: 0px 12px;
+   padding: 0px 30px;
+   border-radius: 40px;
+   background-color: rgb(219, 219, 90);
+   }
+   .container p{
+     color: rgb(228, 17, 17);
+     font-size: large;
+   }
+   h1{
+  border: 2px solid red;
+  text-align: center;
+  border: none;
+   }
+   h2{
+   /* border: 2px solid red; */
+   text-align: center;
+   }
+   .container .first h2{
+       color: blue;
+   }
+    </style>
+</head>
+
+<body>
+    <h1>This is first heading</h1>
+    <div class="container">
+        <h2>This is second heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora harum asperiores earum quos totam, obcaecati
+            molestias maiores consequuntur sed molestiae sapiente a aliquid explicabo fugit illo possimus atque
+            temporibus rerum praesentium suscipit. Earum, optio.</p>
+        <div class="first" id="second">
+            <h2>This is third heading</h2>
+        </div>
+    </div>
+</body>
+
+</html>
