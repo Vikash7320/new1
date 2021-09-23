@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendent selector and child selector</title>
+    <style>
+        article{
+            border: 3px solid red;
+            border-radius: 10px;
+            background-color: rgb(230, 230, 104);
+        }
+        article ol{
+            font-size: large;
+            font-weight: 30px;
+        }
+        article ol h1{
+            text-align: center;
+        }
+        article ol h1:hover{
+            color: red;
+            border: 3px solid blue;
+            border-radius: 8px;
+        }
+     article >ol>li{
+         border: 3px solid blue;
+         background-color: rgb(106, 201, 106);
+         text-align: center;
+         margin: 3px;
+         padding: 10px;
+         border-radius: 8px;
+         border: none;
+         color: rgb(81, 12, 243);
+     }
+     article ol p{
+         text-align: center;
+         color: brown;
+     }
+    </style>
+</head>
+
+<body>
+    <article>
+        <ol>
+            <h1>This is starting text of heading type</h1>
+            <li>This is first list</li>
+            <li>This is second list</li>
+            <li class="cont1">This is third list</li>
+            <li class="cont2">This is third list</li>
+            <p>This is paragraph</p>
+        </ol>
+    </article>
+</body>
+
+</html>
